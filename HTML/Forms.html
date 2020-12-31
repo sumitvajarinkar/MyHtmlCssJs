@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <h3>Payment Form</h3>
+        <hr>
+        <h4>Contact Info</h4>
+        <p>Required field are followed by *</p>
+        <p>Name: *<input type="text" name="uname" required></p>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                Male *<input type="radio" name="ugender" id="male" required>
+                Female *<input type="radio" name="ugender" id="female" required>
+
+            </p>
+        </fieldset>
+        <p>Address:* <br> <textarea name="uaddress" id="address" cols="50" rows="7"></textarea required></p>
+        <p>Email: <input type="email" name="uemail" id="email" required></p>
+        <p>Pincode: <input type="number" name="upin" id="pin"></p>
+        <hr>
+        <h4>Payment Info</h4>
+        <p>Card Type:*
+            <select name="ucard_type" id="card" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="Visa">Visa</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Mastercard">Mastercard</option>     
+            </select>
+        </p>
+        <p>
+            Card Number: *<input type="number" name="ucard_no" id="card_no" required>
+        </p>
+        <p>
+            Expiration Date: *<input type="date" name="udate" id="date" required>
+        </p>
+        <p>CVV: *<input type="password" name="ucvv" id="cvv" required></p>
+        <input type="submit" value="Pay now">
+    </form>
+</body>
+
+</html>
